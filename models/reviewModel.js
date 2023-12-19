@@ -1,13 +1,13 @@
 const mongoose = require("mongoose");
 
 const reviewSchema = new mongoose.Schema({
-    breweryId: {
-        type: String
-    },
-    username: {
-        type: String,
-        required: true,
-    },
+  brewery_id: {
+    type: String,
+  },
+  username: {
+    type: String,
+    required: true,
+  },
   rating: {
     type: Number,
     required: [true, "Please provide a rating between 1 and 5"],
